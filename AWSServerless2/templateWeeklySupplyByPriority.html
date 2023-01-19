@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--<html lang="pt-BR">-->
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"></script>
+    <!--<meta charset="UTF-8">-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--<meta content="utf-8" http-equiv="encoding">-->
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+    <!--<title>Document</title>-->
+    <style>
+        :root {
+            --a4-size: 2480px;
+        }
+
+        * {
+            font-family: "Poppins", sans-serif;
+        }
+
+        html {
+            max-width: var(--a4-size);
+            margin: auto;
+        }
+
+        body {
+            margin: 20px;
+        }
+
+        #titulo {
+            width: 100%;
+            height: 10%;
+            display: block;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 2%;
+        }
+
+        #infoTitulo {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .divInfoTitulo {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        .tituloDestaque {
+            color: #334281;
+        }
+
+        #chart {
+            width: 100%;
+            height: 300px;
+            margin-bottom: 8%;
+        }
+
+        #table {
+            width: 100%;
+            max-height: 50%;
+            margin: 10px auto;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+            #table thead {
+                background-color: #d7dbeb;
+            }
+
+            #table th {
+                color: #334281;
+                padding: 10px 0;
+            }
+
+            #table tbody {
+                background-color: #f5f6fa;
+            }
+
+            #table tr {
+                border-bottom: 1px solid #7d89bf;
+            }
+
+            #table td {
+                height: 60px;
+            }
+
+            #table tfoot {
+                background-color: #d7dbeb;
+            }
+
+                #table tfoot tr {
+                    background-color: #d7dbeb;
+                    width: 100%;
+                    border: none;
+                }
+
+                    #table tfoot tr td {
+                        height: 20px;
+                    }
+
+        .tr-body {
+            border: none;
+            outline: none;
+            background-color: white;
+        }
+
+        .table-head {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="width: 855px; height: 1600px; display: table;">
+    <table class="table-head">
+        <tbody>
+            <tr class="tr-body">
+                <td>
+                    <!--conteudo ###############################################-->
+                    <table class="table-head">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong class="tituloDestaque">Abastecimento Semanal por Criticidade</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="tituloDestaque">De 01/01/2022 à 30/01/2022</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="tituloDestaque">Cliente:</p>
+                                    <p>Exemplo</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="tituloDestaque">Criticidade:</p>
+                                    <p>Alta</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="titulo">
+                        <div id="infoTitulo">
+                            <div class="divInfoTitulo">
+                            </div>
+                            <div class="divInfoTitulo">
+                            </div>
+                        </div>
+                    </div>
+                    <!--conteudo ###############################################-->
+                </td>
+            </tr>
+            <tr class="tr-body">
+                <td>
+                    <!--conteudo ###############################################-->
+                    <div id="main" style="width: 100%; height: 300px;"></div>
+                    <!--conteudo ###############################################-->
+                </td>
+            </tr>
+            <script>
+                var ="estou testando o luigi se áéíóúâêãõÁÉÍÓÚÂÊÃÕ";
+            </script>
+            <tr class="tr-body">
+                <td>
+                    <!--conteudo ###############################################-->
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Dias</th>
+                                <th>Vagas Totais</th>
+                                <th>Vagas Abastecidas</th>
+                                <th>Vagas Semi Abastecidas</th>
+                                <th>Vagas Não Abastecidas</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bodyTable">
+                            <tr>
+                                <td>1) 01/01 à 07/01</td>
+                                <td>10</td>
+                                <td>2</td>
+                                <td>7</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>2) 08/01 à 14/01</td>
+                                <td>8</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>3) 15/01 à 21/01</td>
+                                <td>16</td>
+                                <td>5</td>
+                                <td>12</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>4) 15/01 à 21/01</td>
+                                <td>16</td>
+                                <td>5</td>
+                                <td>12</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>5) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>6) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>7) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>8) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>9) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>10) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>11) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>12) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>13) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>14) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>15) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>16) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>17) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>18) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>19) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>20) 21/01 à 28/01</td>
+                                <td>23</td>
+                                <td>2</td>
+                                <td>16</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <!--conteudo ###############################################-->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" charset="UTF-8">
+        var optionEcharts = {
+            //legend: {},
+            legend: {
+                orient: 'horizontal', // 'vertical'
+                x: 'center', // 'right' | 'center' | 'left' | {number},
+                y: 'bottom', // 'top' | 'center' | 'bottom' | {number}
+                //backgroundColor: '#eee',
+                //borderColor: 'rgba(178,34,34,0.8)',
+                //borderWidth: 4,
+                //padding: 10,    // [5, 10, 15, 20]
+                //itemGap: 20,
+                //textStyle: { color: 'red' },
+                //selected: {
+                //    'Precipitation': false
+                //},
+                data: [
+                    //icon: rect | circle | pin
+                    { name: 'Vagas Abastecidas', itemStyle: { color: '#3FA949' }, icon: 'circle' },
+                    { name: 'Vagas Semi-Abastecidas', itemStyle: { color: '#A8A20F' }, icon: 'circle' },
+                    { name: 'Vagas Não Abastecidas', itemStyle: { color: '#95311B' }, icon: 'circle' },
+                    { name: 'Vagas Totais', itemStyle: { color: '#000000' }, icon: 'circle' }
+                ]
+            },
+            tooltip: {},
+            dataset: {
+                source: [
+                    ["07/09/2021 até 12/09/2021", "13/09/2021 até 19/09/2021", "20/09/2021 até 26/09/2021", "27/09/2021 até 03/10/2021", "04/10/2021 até 10/10/2021"],
+                    ['Vagas Abastecidas', 10, 8, 12, 5, 11],
+                    ['Vagas Semi-Abastecidas', 7, 7, 8, 10, 14],
+                    ['Vagas Não Abastecidas', 3, 5, 10, 10, 10],
+                    ['Vagas Totais', 20, 20, 30, 25, 35]
+                ]
+            },
+            xAxis: [
+                { type: 'category', gridIndex: 0 }
+            ],
+            yAxis: [{ gridIndex: 0 }],
+            grid: [{ bottom: '20%', top: '4%', left: '4%', right: '4%' }],
+            series: [
+                { type: 'bar', seriesLayoutBy: 'row', showBackground: true, itemStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ offset: 0, color: '#3FA949' }, { offset: 0.2, color: '#334281' }, { offset: 1, color: '#5E6DB0' }]) } },
+                { type: 'bar', seriesLayoutBy: 'row', showBackground: true, itemStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ offset: 0, color: '#A8A20F' }, { offset: 0.2, color: '#334281' }, { offset: 1, color: '#5E6DB0' }]) } },
+                { type: 'bar', seriesLayoutBy: 'row', showBackground: true, itemStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{ offset: 0, color: '#95311B' }, { offset: 0.2, color: '#334281' }, { offset: 1, color: '#5E6DB0' }]) } },
+                { type: 'line', seriesLayoutBy: 'row', color: "#000000" }
+            ]
+        };
+        var myChart = echarts.init(document.getElementById('main'));
+        myChart.setOption(optionEcharts);
+    </script>
+</body>
+</html>

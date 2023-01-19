@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AWSServerless2.props" />
+</Project>

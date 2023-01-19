@@ -1,0 +1,1038 @@
+[
+  {
+    "Char": "Á",
+    "Unicode": "\\u00C1"
+  },
+  {
+    "Char": "á",
+    "Unicode": "\\u00E1"
+  },
+  {
+    "Char": "À",
+    "Unicode": "\\u00C0"
+  },
+  {
+    "Char": "à",
+    "Unicode": "\\u00E0"
+  },
+  {
+    "Char": "Â",
+    "Unicode": "\\u00C2"
+  },
+  {
+    "Char": "â",
+    "Unicode": "\\u00E2"
+  },
+  {
+    "Char": "Ä",
+    "Unicode": "\\u00C4"
+  },
+  {
+    "Char": "ä",
+    "Unicode": "\\u00E4"
+  },
+  {
+    "Char": "Ă",
+    "Unicode": "\\u0102"
+  },
+  {
+    "Char": "ă",
+    "Unicode": "\\u0103"
+  },
+  {
+    "Char": "Ā",
+    "Unicode": "\\u0100"
+  },
+  {
+    "Char": "ā",
+    "Unicode": "\\u0101"
+  },
+  {
+    "Char": "Ã",
+    "Unicode": "\\u00C3"
+  },
+  {
+    "Char": "ã",
+    "Unicode": "\\u00E3"
+  },
+  {
+    "Char": "Å",
+    "Unicode": "\\u00C5"
+  },
+  {
+    "Char": "å",
+    "Unicode": "\\u00E5"
+  },
+  {
+    "Char": "Ą",
+    "Unicode": "\\u0104"
+  },
+  {
+    "Char": "ą",
+    "Unicode": "\\u0105"
+  },
+  {
+    "Char": "Æ",
+    "Unicode": "\\u00C6"
+  },
+  {
+    "Char": "æ",
+    "Unicode": "\\u00E6"
+  },
+  {
+    "Char": "ℬ",
+    "Unicode": "\\u212C"
+  },
+  {
+    "Char": "ℂ",
+    "Unicode": "\\u2102"
+  },
+  {
+    "Char": "ℭ",
+    "Unicode": "\\u212D"
+  },
+  {
+    "Char": "Ć",
+    "Unicode": "\\u0106"
+  },
+  {
+    "Char": "ć",
+    "Unicode": "\\u0107"
+  },
+  {
+    "Char": "Ċ",
+    "Unicode": "\\u010A"
+  },
+  {
+    "Char": "ċ",
+    "Unicode": "\\u010B"
+  },
+  {
+    "Char": "Ĉ",
+    "Unicode": "\\u0108"
+  },
+  {
+    "Char": "ĉ",
+    "Unicode": "\\u0109"
+  },
+  {
+    "Char": "Č",
+    "Unicode": "\\u010C"
+  },
+  {
+    "Char": "č",
+    "Unicode": "\\u010D"
+  },
+  {
+    "Char": "Ç",
+    "Unicode": "\\u00C7"
+  },
+  {
+    "Char": "ç",
+    "Unicode": "\\u00E7"
+  },
+  {
+    "Char": "℅",
+    "Unicode": "\\u2105"
+  },
+  {
+    "Char": "ⅅ",
+    "Unicode": "\\u2145"
+  },
+  {
+    "Char": "ⅆ",
+    "Unicode": "\\u2146"
+  },
+  {
+    "Char": "Ď",
+    "Unicode": "\\u010E"
+  },
+  {
+    "Char": "ď",
+    "Unicode": "\\u010F"
+  },
+  {
+    "Char": "Đ",
+    "Unicode": "\\u0110"
+  },
+  {
+    "Char": "đ",
+    "Unicode": "\\u0111"
+  },
+  {
+    "Char": "Ð",
+    "Unicode": "\\u00D0"
+  },
+  {
+    "Char": "ð",
+    "Unicode": "\\u00F0"
+  },
+  {
+    "Char": "ℯ",
+    "Unicode": "\\u212F"
+  },
+  {
+    "Char": "ℰ",
+    "Unicode": "\\u2130"
+  },
+  {
+    "Char": "ⅇ",
+    "Unicode": "\\u2147"
+  },
+  {
+    "Char": "É",
+    "Unicode": "\\u00C9"
+  },
+  {
+    "Char": "é",
+    "Unicode": "\\u00E9"
+  },
+  {
+    "Char": "È",
+    "Unicode": "\\u00C8"
+  },
+  {
+    "Char": "è",
+    "Unicode": "\\u00E8"
+  },
+  {
+    "Char": "Ė",
+    "Unicode": "\\u0116"
+  },
+  {
+    "Char": "ė",
+    "Unicode": "\\u0117"
+  },
+  {
+    "Char": "Ê",
+    "Unicode": "\\u00CA"
+  },
+  {
+    "Char": "ê",
+    "Unicode": "\\u00EA"
+  },
+  {
+    "Char": "Ë",
+    "Unicode": "\\u00CB"
+  },
+  {
+    "Char": "ë",
+    "Unicode": "\\u00EB"
+  },
+  {
+    "Char": "Ě",
+    "Unicode": "\\u011A"
+  },
+  {
+    "Char": "ě",
+    "Unicode": "\\u011B"
+  },
+  {
+    "Char": "Ē",
+    "Unicode": "\\u0112"
+  },
+  {
+    "Char": "ē",
+    "Unicode": "\\u0113"
+  },
+  {
+    "Char": "Ę",
+    "Unicode": "\\u0118"
+  },
+  {
+    "Char": "ę",
+    "Unicode": "\\u0119"
+  },
+  {
+    "Char": "ℱ",
+    "Unicode": "\\u2131"
+  },
+  {
+    "Char": "ƒ",
+    "Unicode": "\\u0192"
+  },
+  {
+    "Char": "ℊ",
+    "Unicode": "\\u210A"
+  },
+  {
+    "Char": "Ġ",
+    "Unicode": "\\u0120"
+  },
+  {
+    "Char": "ġ",
+    "Unicode": "\\u0121"
+  },
+  {
+    "Char": "Ĝ",
+    "Unicode": "\\u011C"
+  },
+  {
+    "Char": "ĝ",
+    "Unicode": "\\u011D"
+  },
+  {
+    "Char": "Ğ",
+    "Unicode": "\\u011E"
+  },
+  {
+    "Char": "ğ",
+    "Unicode": "\\u011F"
+  },
+  {
+    "Char": "Ģ",
+    "Unicode": "\\u0122"
+  },
+  {
+    "Char": "ℋ",
+    "Unicode": "\\u210B"
+  },
+  {
+    "Char": "ℎ",
+    "Unicode": "\\u210E"
+  },
+  {
+    "Char": "ℍ",
+    "Unicode": "\\u210D"
+  },
+  {
+    "Char": "ℌ",
+    "Unicode": "\\u210C"
+  },
+  {
+    "Char": "Ĥ",
+    "Unicode": "\\u0124"
+  },
+  {
+    "Char": "ĥ",
+    "Unicode": "\\u0125"
+  },
+  {
+    "Char": "Ħ",
+    "Unicode": "\\u0126"
+  },
+  {
+    "Char": "ħ",
+    "Unicode": "\\u0127"
+  },
+  {
+    "Char": "ℏ",
+    "Unicode": "\\u210F"
+  },
+  {
+    "Char": "ı",
+    "Unicode": "\\u0131"
+  },
+  {
+    "Char": "ℐ",
+    "Unicode": "\\u2110"
+  },
+  {
+    "Char": "ℑ",
+    "Unicode": "\\u2111"
+  },
+  {
+    "Char": "ⅈ",
+    "Unicode": "\\u2148"
+  },
+  {
+    "Char": "í",
+    "Unicode": "\\u00ED"
+  },
+  {
+    "Char": "Ì",
+    "Unicode": "\\u00CC"
+  },
+  {
+    "Char": "ì",
+    "Unicode": "\\u00EC"
+  },
+  {
+    "Char": "İ",
+    "Unicode": "\\u0130"
+  },
+  {
+    "Char": "Î",
+    "Unicode": "\\u00CE"
+  },
+  {
+    "Char": "î",
+    "Unicode": "\\u00EE"
+  },
+  {
+    "Char": "Ï",
+    "Unicode": "\\u00CF"
+  },
+  {
+    "Char": "ï",
+    "Unicode": "\\u00EF"
+  },
+  {
+    "Char": "Ī",
+    "Unicode": "\\u012A"
+  },
+  {
+    "Char": "ī",
+    "Unicode": "\\u012B"
+  },
+  {
+    "Char": "Ĩ",
+    "Unicode": "\\u0128"
+  },
+  {
+    "Char": "ĩ",
+    "Unicode": "\\u0129"
+  },
+  {
+    "Char": "Į",
+    "Unicode": "\\u012E"
+  },
+  {
+    "Char": "į",
+    "Unicode": "\\u012F"
+  },
+  {
+    "Char": "Ĳ",
+    "Unicode": "\\u0132"
+  },
+  {
+    "Char": "ĳ",
+    "Unicode": "\\u0133"
+  },
+  {
+    "Char": "Ĵ",
+    "Unicode": "\\u0134"
+  },
+  {
+    "Char": "ĵ",
+    "Unicode": "\\u0135"
+  },
+  {
+    "Char": "ĸ",
+    "Unicode": "\\u0138"
+  },
+  {
+    "Char": "Ķ",
+    "Unicode": "\\u0136"
+  },
+  {
+    "Char": "ķ",
+    "Unicode": "\\u0137"
+  },
+  {
+    "Char": "ℒ",
+    "Unicode": "\\u2112"
+  },
+  {
+    "Char": "ℓ",
+    "Unicode": "\\u2113"
+  },
+  {
+    "Char": "Ĺ",
+    "Unicode": "\\u0139"
+  },
+  {
+    "Char": "ĺ",
+    "Unicode": "\\u013A"
+  },
+  {
+    "Char": "Ŀ",
+    "Unicode": "\\u013F"
+  },
+  {
+    "Char": "ŀ",
+    "Unicode": "\\u0140"
+  },
+  {
+    "Char": "Ľ",
+    "Unicode": "\\u013D"
+  },
+  {
+    "Char": "ľ",
+    "Unicode": "\\u013E"
+  },
+  {
+    "Char": "Ļ",
+    "Unicode": "\\u013B"
+  },
+  {
+    "Char": "ļ",
+    "Unicode": "\\u013C"
+  },
+  {
+    "Char": "Ł",
+    "Unicode": "\\u0141"
+  },
+  {
+    "Char": "ł",
+    "Unicode": "\\u0142"
+  },
+  {
+    "Char": "ℳ",
+    "Unicode": "\\u2133"
+  },
+  {
+    "Char": "ℕ",
+    "Unicode": "\\u2115"
+  },
+  {
+    "Char": "Ń",
+    "Unicode": "\\u0143"
+  },
+  {
+    "Char": "ń",
+    "Unicode": "\\u0144"
+  },
+  {
+    "Char": "Ň",
+    "Unicode": "\\u0147"
+  },
+  {
+    "Char": "ň",
+    "Unicode": "\\u0148"
+  },
+  {
+    "Char": "Ñ",
+    "Unicode": "\\u00D1"
+  },
+  {
+    "Char": "ñ",
+    "Unicode": "\\u00F1"
+  },
+  {
+    "Char": "Ņ",
+    "Unicode": "\\u0145"
+  },
+  {
+    "Char": "ņ",
+    "Unicode": "\\u0146"
+  },
+  {
+    "Char": "ŉ",
+    "Unicode": "\\u0149"
+  },
+  {
+    "Char": "№",
+    "Unicode": "\\u2116"
+  },
+  {
+    "Char": "Ŋ",
+    "Unicode": "\\u014A"
+  },
+  {
+    "Char": "ŋ",
+    "Unicode": "\\u014B"
+  },
+  {
+    "Char": "º",
+    "Unicode": "\\u00BA"
+  },
+  {
+    "Char": "ℴ",
+    "Unicode": "\\u2134"
+  },
+  {
+    "Char": "Ó",
+    "Unicode": "\\u00D3"
+  },
+  {
+    "Char": "ó",
+    "Unicode": "\\u00F3"
+  },
+  {
+    "Char": "Ò",
+    "Unicode": "\\u00D2"
+  },
+  {
+    "Char": "ò",
+    "Unicode": "\\u00F2"
+  },
+  {
+    "Char": "Ô",
+    "Unicode": "\\u00D4"
+  },
+  {
+    "Char": "ô",
+    "Unicode": "\\u00F4"
+  },
+  {
+    "Char": "Ö",
+    "Unicode": "\\u00D6"
+  },
+  {
+    "Char": "ö",
+    "Unicode": "\\u00F6"
+  },
+  {
+    "Char": "Ō",
+    "Unicode": "\\u014C"
+  },
+  {
+    "Char": "ō",
+    "Unicode": "\\u014D"
+  },
+  {
+    "Char": "Õ",
+    "Unicode": "\\u00D5"
+  },
+  {
+    "Char": "õ",
+    "Unicode": "\\u00F5"
+  },
+  {
+    "Char": "Ő",
+    "Unicode": "\\u0150"
+  },
+  {
+    "Char": "ő",
+    "Unicode": "\\u0151"
+  },
+  {
+    "Char": "Ø",
+    "Unicode": "\\u00D8"
+  },
+  {
+    "Char": "ø",
+    "Unicode": "\\u00F8"
+  },
+  {
+    "Char": "Œ",
+    "Unicode": "\\u0152"
+  },
+  {
+    "Char": "œ",
+    "Unicode": "\\u0153"
+  },
+  {
+    "Char": "ℙ",
+    "Unicode": "\\u2119"
+  },
+  {
+    "Char": "℘",
+    "Unicode": "\\u2118"
+  },
+  {
+    "Char": "ℚ",
+    "Unicode": "\\u211A"
+  },
+  {
+    "Char": "ℝ",
+    "Unicode": "\\u211D"
+  },
+  {
+    "Char": "ℛ",
+    "Unicode": "\\u211B"
+  },
+  {
+    "Char": "ℜ",
+    "Unicode": "\\u211C"
+  },
+  {
+    "Char": "Ŕ",
+    "Unicode": "\\u0154"
+  },
+  {
+    "Char": "ŕ",
+    "Unicode": "\\u0155"
+  },
+  {
+    "Char": "Ř",
+    "Unicode": "\\u0158"
+  },
+  {
+    "Char": "ř",
+    "Unicode": "\\u0159"
+  },
+  {
+    "Char": "Ŗ",
+    "Unicode": "\\u0156"
+  },
+  {
+    "Char": "ŗ",
+    "Unicode": "\\u0157"
+  },
+  {
+    "Char": "℞",
+    "Unicode": "\\u211E"
+  },
+  {
+    "Char": "Ś",
+    "Unicode": "\\u015A"
+  },
+  {
+    "Char": "ś",
+    "Unicode": "\\u015B"
+  },
+  {
+    "Char": "Ŝ",
+    "Unicode": "\\u015C"
+  },
+  {
+    "Char": "ŝ",
+    "Unicode": "\\u015D"
+  },
+  {
+    "Char": "Š",
+    "Unicode": "\\u0160"
+  },
+  {
+    "Char": "š",
+    "Unicode": "\\u0161"
+  },
+  {
+    "Char": "Ş",
+    "Unicode": "\\u015E"
+  },
+  {
+    "Char": "ş",
+    "Unicode": "\\u015F"
+  },
+  {
+    "Char": "ß",
+    "Unicode": "\\u00DF"
+  },
+  {
+    "Char": "Ť",
+    "Unicode": "\\u0164"
+  },
+  {
+    "Char": "ť",
+    "Unicode": "\\u0165"
+  },
+  {
+    "Char": "Ţ",
+    "Unicode": "\\u0162"
+  },
+  {
+    "Char": "ţ",
+    "Unicode": "\\u0163"
+  },
+  {
+    "Char": "Þ",
+    "Unicode": "\\u00DE"
+  },
+  {
+    "Char": "þ",
+    "Unicode": "\\u00FE"
+  },
+  {
+    "Char": "Ŧ",
+    "Unicode": "\\u0166"
+  },
+  {
+    "Char": "ŧ",
+    "Unicode": "\\u0167"
+  },
+  {
+    "Char": "Ú",
+    "Unicode": "\\u00DA"
+  },
+  {
+    "Char": "ú",
+    "Unicode": "\\u00FA"
+  },
+  {
+    "Char": "Ù",
+    "Unicode": "\\u00D9"
+  },
+  {
+    "Char": "ù",
+    "Unicode": "\\u00F9"
+  },
+  {
+    "Char": "Û",
+    "Unicode": "\\u00DB"
+  },
+  {
+    "Char": "û",
+    "Unicode": "\\u00FB"
+  },
+  {
+    "Char": "Ü",
+    "Unicode": "\\u00DC"
+  },
+  {
+    "Char": "ü",
+    "Unicode": "\\u00FC"
+  },
+  {
+    "Char": "Ŭ",
+    "Unicode": "\\u016C"
+  },
+  {
+    "Char": "ŭ",
+    "Unicode": "\\u016D"
+  },
+  {
+    "Char": "Ū",
+    "Unicode": "\\u016A"
+  },
+  {
+    "Char": "ū",
+    "Unicode": "\\u016B"
+  },
+  {
+    "Char": "Ũ",
+    "Unicode": "\\u0168"
+  },
+  {
+    "Char": "ũ",
+    "Unicode": "\\u0169"
+  },
+  {
+    "Char": "Ů",
+    "Unicode": "\\u016E"
+  },
+  {
+    "Char": "ů",
+    "Unicode": "\\u016F"
+  },
+  {
+    "Char": "Ų",
+    "Unicode": "\\u0172"
+  },
+  {
+    "Char": "ų",
+    "Unicode": "\\u0173"
+  },
+  {
+    "Char": "Ű",
+    "Unicode": "\\u0170"
+  },
+  {
+    "Char": "ű",
+    "Unicode": "\\u0171"
+  },
+  {
+    "Char": "Ŵ",
+    "Unicode": "\\u0174"
+  },
+  {
+    "Char": "ŵ",
+    "Unicode": "\\u0175"
+  },
+  {
+    "Char": "Ý",
+    "Unicode": "\\u00DD"
+  },
+  {
+    "Char": "ý",
+    "Unicode": "\\u00FD"
+  },
+  {
+    "Char": "Ŷ",
+    "Unicode": "\\u0176"
+  },
+  {
+    "Char": "ŷ",
+    "Unicode": "\\u0177"
+  },
+  {
+    "Char": "ÿ",
+    "Unicode": "\\u00FF"
+  },
+  {
+    "Char": "Ÿ",
+    "Unicode": "\\u0178"
+  },
+  {
+    "Char": "ℤ",
+    "Unicode": "\\u2124"
+  },
+  {
+    "Char": "ℨ",
+    "Unicode": "\\u2128"
+  },
+  {
+    "Char": "Ź",
+    "Unicode": "\\u0179"
+  },
+  {
+    "Char": "ź",
+    "Unicode": "\\u017A"
+  },
+  {
+    "Char": "Ż",
+    "Unicode": "\\u017B"
+  },
+  {
+    "Char": "ż",
+    "Unicode": "\\u017C"
+  },
+  {
+    "Char": "Ž",
+    "Unicode": "\\u017D"
+  },
+  {
+    "Char": "ž",
+    "Unicode": "\\u017E"
+  },
+  {
+    "Char": "Α",
+    "Unicode": "\\u0391"
+  },
+  {
+    "Char": "α",
+    "Unicode": "\\u03B1"
+  },
+  {
+    "Char": "Β",
+    "Unicode": "\\u0392"
+  },
+  {
+    "Char": "β",
+    "Unicode": "\\u03B2"
+  },
+  {
+    "Char": "Γ",
+    "Unicode": "\\u0393"
+  },
+  {
+    "Char": "γ",
+    "Unicode": "\\u03B3"
+  },
+  {
+    "Char": "Δ",
+    "Unicode": "\\u0394"
+  },
+  {
+    "Char": "δ",
+    "Unicode": "\\u03B4"
+  },
+  {
+    "Char": "Ε",
+    "Unicode": "\\u0395"
+  },
+  {
+    "Char": "ε",
+    "Unicode": "\\u03B5"
+  },
+  {
+    "Char": "Ζ",
+    "Unicode": "\\u0396"
+  },
+  {
+    "Char": "ζ",
+    "Unicode": "\\u03B6"
+  },
+  {
+    "Char": "Η",
+    "Unicode": "\\u0397"
+  },
+  {
+    "Char": "η",
+    "Unicode": "\\u03B7"
+  },
+  {
+    "Char": "Θ",
+    "Unicode": "\\u0398"
+  },
+  {
+    "Char": "θ",
+    "Unicode": "\\u03B8"
+  },
+  {
+    "Char": "ϑ",
+    "Unicode": "\\u03D1"
+  },
+  {
+    "Char": "Ι",
+    "Unicode": "\\u0399"
+  },
+  {
+    "Char": "ι",
+    "Unicode": "\\u03B9"
+  },
+  {
+    "Char": "Κ",
+    "Unicode": "\\u039A"
+  },
+  {
+    "Char": "κ",
+    "Unicode": "\\u03BA"
+  },
+  {
+    "Char": "Λ",
+    "Unicode": "\\u039B"
+  },
+  {
+    "Char": "λ",
+    "Unicode": "\\u03BB"
+  },
+  {
+    "Char": "Μ",
+    "Unicode": "\\u039C"
+  },
+  {
+    "Char": "μ",
+    "Unicode": "\\u03BC"
+  },
+  {
+    "Char": "Ν",
+    "Unicode": "\\u039D"
+  },
+  {
+    "Char": "ν",
+    "Unicode": "\\u03BD"
+  },
+  {
+    "Char": "Ξ",
+    "Unicode": "\\u039E"
+  },
+  {
+    "Char": "ξ",
+    "Unicode": "\\u03BE"
+  },
+  {
+    "Char": "Ο",
+    "Unicode": "\\u039F"
+  },
+  {
+    "Char": "ο",
+    "Unicode": "\\u03BF"
+  },
+  {
+    "Char": "Π",
+    "Unicode": "\\u03A0"
+  },
+  {
+    "Char": "π",
+    "Unicode": "\\u03C0"
+  },
+  {
+    "Char": "ϖ",
+    "Unicode": "\\u03D6"
+  },
+  {
+    "Char": "Ρ",
+    "Unicode": "\\u03A1"
+  },
+  {
+    "Char": "ρ",
+    "Unicode": "\\u03C1"
+  },
+  {
+    "Char": "Σ",
+    "Unicode": "\\u03A3"
+  },
+  {
+    "Char": "ς",
+    "Unicode": "\\u03C2"
+  },
+  {
+    "Char": "σ",
+    "Unicode": "\\u03C3"
+  },
+  {
+    "Char": "Τ",
+    "Unicode": "\\u03A4"
+  },
+  {
+    "Char": "τ",
+    "Unicode": "\\u03C4"
+  },
+  {
+    "Char": "Υ",
+    "Unicode": "\\u03A5"
+  }
+]
