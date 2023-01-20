@@ -85,7 +85,8 @@ public class ExportPdfController : ControllerBase
             //devemos pegar todos os trechos de <script> do html e fazer o replace das letras com acento
             //fazer split por <script> vc terá algo assim: ["<html><head><head><body><script>","var xpto = 'js'; </script>"]
 
-            var startTag = "<script type=\"text/javascript\" charset=\"UTF-8\">";
+            //var startTag = "<script type=\"text/javascript\" charset=\"UTF-8\">";
+            var startTag = "<script>";
             if (html.Contains(startTag))
             {
                 var unicodes = await GetResource<IEnumerable<UnicodeCharsItem>>("UnicodeChars");
@@ -94,7 +95,6 @@ public class ExportPdfController : ControllerBase
                 foreach (var unicode in unicodes)
                 {
                     htmlScript = htmlScript.Replace(unicode.Char, unicode.Unicode);
-
                 }
 
                 var htmlPronto = htmlAteScript + htmlScript;
