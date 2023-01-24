@@ -29,7 +29,7 @@ public class ExportPdfController : ControllerBase
     public async Task<IActionResult> Teste(int id)
     {
         var pdf = await Test();
-        this.HttpContext.Response.Headers.TryAdd("Content-Type", "application/json");
+        this.HttpContext.Response.Headers.TryAdd("Content-Type", "application/json"); // --> tem que ter em todas
         return new FileContentResult(pdf, "application/pdf");
     }
 
@@ -80,36 +80,42 @@ public class ExportPdfController : ControllerBase
         try
         {
 
-            //fonte: https://unicode-table.com/en/html-entities/
-            //TODO: ao invés de pegar somente um determinado trecho de <script>
-            //devemos pegar todos os trechos de <script> do html e fazer o replace das letras com acento
-            //fazer split por <script> vc terá algo assim: ["<html><head><head><body><script>","var xpto = 'js'; </script>"]
-
-            //var startTag = "<script type=\"text/javascript\" charset=\"UTF-8\">";
-            var startTag = "<script>";
-            if (html.Contains(startTag))
+            if (html.Contains("<script"))
             {
+                var scripts1 = html
+                    .Split("<script", StringSplitOptions.None)
+                    .SelectMany(line =>
+                    {
+                        var splitedLine = line.Split("</script>");
+
+                        var isFirst = true;
+                        var treated = splitedLine.Select(scriptLine =>
+                        {
+                            var isScript = line.Contains("</script>") && isFirst;
+                            var script = (isScript ? "<script" : "") + scriptLine + (isScript ? "</script>" : "");
+                            isFirst = false;
+
+                            return script;
+                        }).ToList();
+                        return treated;
+                    }).ToList();
+
+                var htmlTreated = html;
                 var unicodes = await GetResource<IEnumerable<UnicodeCharsItem>>("UnicodeChars");
-                var htmlAteScript = html.Substring(0, html.IndexOf(startTag));
-                var htmlScript = html.Substring(htmlAteScript.Length);
-                foreach (var unicode in unicodes)
+
+                foreach (var originalPartScript in scripts1.Where(a => a.Contains("<script")))
                 {
-                    htmlScript = htmlScript.Replace(unicode.Char, unicode.Unicode);
+                    var scriptReplaced = originalPartScript;
+                    foreach (var unicode in unicodes)
+                    {
+                        scriptReplaced = scriptReplaced.Replace(unicode.Char, unicode.Unicode);
+                    }
+                    htmlTreated = htmlTreated.Replace(originalPartScript, scriptReplaced);
                 }
 
-                var htmlPronto = htmlAteScript + htmlScript;
-                html = htmlPronto;
+                html = htmlTreated;
+
             }
-
-            ////#######################
-            //Encoding utf8 = Encoding.UTF8;
-            //byte[] utfBytes = utf8.GetBytes(html);
-
-            //Encoding iso = Encoding.ASCII;
-            //byte[] isoBytes = Encoding.Convert(utf8, iso, utfBytes);
-            //html = iso.GetString(isoBytes);
-            ////#######################
-
 
 
             _generatePdf.SetConvertOptions(new WkHtmlToPdfOptions()
@@ -124,10 +130,7 @@ public class ExportPdfController : ControllerBase
                 Encoding = "utf-8"
             });
             var pdf = _generatePdf.GetPDF(html);
-            var ms = new MemoryStream(pdf);
-            ms.Position = 0;
-            //return pdf;
-            return ms.ToArray();
+            return (byte[])pdf;
         }
         catch (Exception ex)
         {
@@ -135,46 +138,4 @@ public class ExportPdfController : ControllerBase
             return new byte[] { };
         }
     }
-
-    //var doc = new HtmlToPdfDocument()
-    //{
-    //    GlobalSettings =
-    //              {
-    //                ColorMode = ColorMode.Color,
-    //                PaperSize = PaperKind.A4,
-    //                Orientation = Orientation.Portrait,
-    //                Margins = new MarginSettings(10, 4, 4, 4)
-    //              },
-    //    Objects =
-    //              {
-    //                new ObjectSettings()
-    //                {
-    //                    PagesCount = true,
-    //                    Encoding = Encoding.UTF8,
-    //                    UseExternalLinks = true,
-    //                    HtmlContent = html,
-    //                    WebSettings =
-    //                    {
-    //                        EnableIntelligentShrinking = false,
-    //                        EnableJavascript = true,
-    //                        Background = true,
-    //                        enablePlugins = true,
-    //                        MinimumFontSize = 1,
-    //                        DefaultEncoding = "utf-8",
-    //                        LoadImages = true,
-    //                        PrintMediaType = true
-    //                    },
-    //                    LoadSettings = new LoadSettings
-    //                    {
-    //                        LoadErrorHandling = ContentErrorHandling.Skip,
-    //                        JSDelay = 10000,
-    //                        StopSlowScript = false,
-    //                        ZoomFactor = 1.0d
-    //                    },
-    //                    ProduceForms = false,
-    //                    UseLocalLinks = true,
-    //                    IncludeInOutline = true
-    //                }
-    //              }
-    //};
 }
